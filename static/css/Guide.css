@@ -1,0 +1,401 @@
+
+*{
+    padding:0;
+    margin:0;   
+}
+.YURU{
+  margin-top:-27px; 
+  background-image: url('static/Alpha_Images/Hero_Background.png');
+  height:630px;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+
+.offer_sec{
+    padding-bottom:10px;
+    position:relative;
+    top:-4px;
+}
+.Benefits{
+    background-color: #f8f8f8;
+    height:228px;
+}
+/*Change the font and color of the benefits section*/
+.Benefitss{
+    font-family:Titillium;
+    color:#36454f;
+}
+.containerall{
+    display:flex;
+    background-color:#f8f8f8;
+    height:228px;
+    align-items:center;
+    justify-content: space-around;
+    justify-items:center;
+}
+.vp_message{
+    text-align:right;
+    margin-right:40px;
+    padding-top:15%;
+    position:relative;
+    top:-50px;
+}
+.introduction{
+    height:250px;
+}
+#G_sec{
+    margin-top:-27px;
+    background-image: url("{% static '../Alpha_Images /.Guide_Section.png' %}");
+    height:800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*Insert youtube video */
+
+}
+/*change the characteristics of the buttons*/
+#testimonials_btn{
+    background-color: white;
+    border-radius:5px;
+    color:#36454f;
+    font-weight: 650;
+}
+#getbook_btn{
+    border-radius:5px;
+    font-weight: 650;
+    background-color:#ac3737;
+}
+/*this section is to introduce flex to the introduction section*/
+.introduction_container{
+    display:flex;
+    margin-left:150px;
+    padding-top:50px;
+}
+.sub{
+    padding-left:30px;
+}
+.sub_text{
+    font-size: larger;
+}
+.section_text{
+    display:flex;
+    justify-content:center;
+    justify-items: center;
+    padding-top:30px;
+    align-items: center;
+    color:#36454f   
+}
+.Guide_section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+
+}
+.main_vp{
+    margin-left:94px;
+    margin-top:94px;
+    font-size:2.92rem; 
+    margin-left:1.168rem;
+    font-size: 2.92rem;
+    line-height: 110%;
+    margin: 1.9466666667rem 0 1.168rem 0;
+    color:#36454f;
+    }
+    .report{
+        display:flex;
+        flex-direction:column;
+        margin-left:150px;
+        height:600px;
+    }
+    .subA, .subB, .subC,.narrate, .informa{
+        font-size:20px;
+        font-family: tahoma normal;
+    } 
+    .sub_highlight{
+        margin-left: 40px;
+        border:none;
+        margin-bottom: 10px;
+    }
+    .subA_container, .subB_container, .subC_container{
+        padding-bottom:8px;
+    }
+    .main, .main_vp, .section_text,.test ,.AboutA{
+        font-family:'Raleway', sans-serif;
+        color:#36454f;
+    }
+    @font-face{
+        src:url('static/fonts/Tahoma Regular font.ttf');
+        font-family: "Tahoma normal lighter" ;
+    }
+    @font-face{
+        src:url('static/fonts/BRITANIC.TTF');
+        font-family: "BRITANIC";
+    
+    }
+    @font-face{
+        src:url('static/fonts/TitilliumWeb-Regular.ttf');
+        font-family:"Titilliumweb";
+    }
+    .sub_text, #narration, .Synopsis{
+        font-family:"Tahoma normal lighter" ;
+        color:#36454f;
+        font-size:23pts;
+    }
+    .testimonials{
+        display:flex;
+        text-align:center;
+        background-color: #99C4C8;
+        justify-content:center;
+        flex-direction:row;
+        flex-wrap:wrap;
+        opacity:100%;
+        height:600px;
+    }
+    ::after .test{
+        color:#36454f;
+        opacity:100%;
+    }
+    #intro{
+        color:#36454f;
+        font-weight:200;
+        display:flex;
+    }
+    .card-title{
+        font-family:Tahoma;
+        font-size:14pts;
+    }
+    .testimonials{
+        display:flex;
+        flex-direction:row;
+    }
+    .row{
+        width:100%;
+        display:flex;
+        justify-content:center;
+        text-align:left;
+    }
+    .card{
+        border-radius:15px;
+        margin:10px;
+        max-width:250px;
+        min-width:300px;
+        height:320px;
+    }
+    .About_Author{
+        background-color:white; 
+        height:420px;
+    } 
+
+    .Author_intro{
+        text-align:right;
+        margin-right:150px;
+        float:right;
+    }   
+    .closing{
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-image:url(./Alpha_Images/subtle-prism.png);
+        height:500px;  
+    }
+/*get the image to be positioned at the bottom of the div*/
+    #imagea{
+        bottom:0;
+        position:relative;
+        border:inline-block;
+        float:left;
+    }
+    .informa{
+        float:right;
+        display:flex;
+        font-size:small;
+    }
+    .vp_message, .closeit , .holder{
+        font-family:BRITANIC;
+        color:white;
+    }    
+    .hero_background{
+        height:80vh;
+    }
+    .buttonss{
+        display:flex;
+        justify-content: right;
+        position:relative;
+        top:-45px;
+        left:-30px;
+    }
+    .button1{
+        padding-left:8px;
+    }
+    .closing_remark{
+        background-image: url('./Alpha_Images/Hero_Background.png');
+        background-repeat: no-repeat;
+        background-size:cover;
+        height:180px;  
+    }
+    /* bring the closing statement to the center using the flex box*/
+    .closemessage{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .wrap1{
+        display:flex;
+        flex-direction: row;
+        padding-bottom:10px;
+    }
+    .bullet{
+        max-width: 30px;
+        max-height:30px;
+    }
+    .subA, .subB, .suBC{
+        position:relative;
+        top:-10px;
+        right:-8px;
+    }
+    .container1, .container2, .container3{
+        display:flex;
+        align-items:center;
+        flex-direction:column;
+    }
+    .Benefitss{
+        font-family:'Titilliumweb';
+        font-weight:400;
+        font-size:24px;
+    }
+    .socials{
+        background-color:#f0f0f0;
+        height:90px;
+    }
+    .alonavbar{
+        color:white;
+    }
+    .Author{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        text-align:right;
+        margin-right:150px;
+    }
+    .About_Author{
+        position:relative; 
+    }
+    .pic_hold{
+        position:absolute;
+        bottom:0;
+    }
+    .Synopsis{
+        font-size:larger;
+    }
+    .holder{
+        height:180px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .social{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height: 90px;
+        align-content:space-around;
+        gap:30px;   
+    }
+    
+    .sign_up_form{
+        height:470px;
+        width:450px;
+        background-color: #0c9DAE;
+        float:right;
+        padding:20px;
+    }
+    .input-box{
+        border-radius:10px;
+        outline:none;
+    }
+    .Get_Report{
+        text-align:center;
+        justify-content:center;
+        justify-content: right;
+        font-size:40px;
+        font-family:'Times New Roman';
+        color:white;
+        font-weight: 800;
+    }
+    .sign{
+        float:right;
+        position:relative;
+        top:-400px;
+        left:-100px;
+    }
+    @font-face {
+        font-family: "Goudy-old";
+        src: url('../fonts/Goudy.ttf');
+    }
+
+    #sub_sub {
+        font-family:Gould-old;
+        font-size:21px;
+        color:white;
+        line-height: 23px;
+        text-align:center;
+        padding-bottom:5px;
+    }
+    #get_report{
+        background-color: #ffa200;
+        color:white;
+        border-radius:5px;
+        position:relative;
+        top:-10px;
+    }
+    .button_report{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        position:relative;
+        bottom:-100px;
+
+    }
+    #fullname ,#emailaddy{
+        background-color: white;
+        padding-bottom:5px;
+        height:35px;
+    }
+/*now utlilize the flex properties to gap the text fields*/
+    .formpack{
+    display:flex;
+    flex-direction:column;
+    }
+    .form1{
+    padding-bottom:0.5em;
+    }
+/*move both text fields down the subscription form */
+.form1 , .form2{
+    position:relative; 
+    bottom:-50px
+}
+.card-content{
+    font-family:sans-serif light;
+    font-style:italic;
+    font-size:large;
+}
+/*reposition the subscription form in its entirety*/
+.sign{
+    position:relative;
+    top:-435px;
+    float:right;
+}
+.wrap_bulletin{
+    position:relative;
+    bottom:-25px;   
+}
+.wrapfirst{
+    position:relative;
+    bottom:-20px;
+}
+.image_holder img {
+    position:relative;
+    left:-23px;
+    top:-480px;
+    height:100vh; /*resize the image which is too large*/
+    width:auto;
+}
