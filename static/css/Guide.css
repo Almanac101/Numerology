@@ -5,10 +5,12 @@
 }
 .YURU{
   margin-top:-27px; 
-  background-image: url('static/Alpha_Images/Hero_Background.png');
+  background-image:("{% static '../Alpha_Images /.Hero_Back.png' %}");
   height:630px;
+  width:100%;
   background-repeat:no-repeat;
   background-size:cover;
+  overflow:hidden;
 }
 
 .offer_sec{
@@ -22,9 +24,10 @@
 }
 /*Change the font and color of the benefits section*/
 .Benefitss{
-    font-family:Titillium;
+    font-family:Titilliumweb;
     color:#36454f;
 }
+
 .containerall{
     display:flex;
     background-color:#f8f8f8;
@@ -33,13 +36,22 @@
     justify-content: space-around;
     justify-items:center;
 }
+.overlayys{
+    margin:0;
+    padding:0;
+    position:relative;
+    width:100%;
+    height:630px;
+    background-color:#0c9DAE;
+}
 .vp_message{
     text-align:right;
     margin-right:40px;
     padding-top:15%;
     position:relative;
-    top:-50px;
+    top:-50px;  
 }
+
 .introduction{
     height:250px;
 }
@@ -119,21 +131,22 @@
     .subA_container, .subB_container, .subC_container{
         padding-bottom:8px;
     }
+
     .main, .main_vp, .section_text,.test ,.AboutA{
         font-family:'Raleway', sans-serif;
         color:#36454f;
     }
     @font-face{
-        src:url('static/fonts/Tahoma Regular font.ttf');
+        src:url('../fonts/Tahoma Regular font.ttf');
         font-family: "Tahoma normal lighter" ;
     }
     @font-face{
-        src:url('static/fonts/BRITANIC.TTF');
+        src:url('../fonts/BRITANIC.TTF');
         font-family: "BRITANIC";
     
     }
     @font-face{
-        src:url('static/fonts/TitilliumWeb-Regular.ttf');
+        src:url('../fonts/TitilliumWeb-Regular.ttf');
         font-family:"Titilliumweb";
     }
     .sub_text, #narration, .Synopsis{
@@ -194,7 +207,7 @@
     .closing{
         background-size:cover;
         background-repeat:no-repeat;
-        background-image:url(./Alpha_Images/subtle-prism.png);
+        background-image:url('./Alpha_Images/subtle-prism.png');
         height:500px;  
     }
 /*get the image to be positioned at the bottom of the div*/
@@ -210,8 +223,10 @@
         font-size:small;
     }
     .vp_message, .closeit , .holder{
-        font-family:BRITANIC;
-        color:white;
+        font-family:sans-serif;
+        color:#f0f0f0;
+        font-weight: 650;
+        line-height: 1.17;
     }    
     .hero_background{
         height:80vh;
@@ -305,12 +320,16 @@
         height:470px;
         width:450px;
         background-color: #0c9DAE;
-        float:right;
+        /*float:right;*/    
         padding:20px;
     }
     .input-box{
         border-radius:10px;
-        outline:none;
+        outline: #36454f;
+    }
+    label{
+        font-weight: bold;
+        color:black;
     }
     .Get_Report{
         text-align:center;
@@ -321,17 +340,16 @@
         color:white;
         font-weight: 800;
     }
-    .sign{
-        float:right;
-        position:relative;
-        top:-400px;
-        left:-100px;
-    }
+    
     @font-face {
         font-family: "Goudy-old";
         src: url('../fonts/Goudy.ttf');
     }
 
+    @font-face {
+        font-family:"BRITANNIC";
+        src:url('../fonts/BRITANIC.TTF');
+    }
     #sub_sub {
         font-family:Gould-old;
         font-size:21px;
@@ -340,11 +358,13 @@
         text-align:center;
         padding-bottom:5px;
     }
+
+/* use this css property for the new submit button from django*/
     #get_report{
         background-color: #ffa200;
         color:white;
         border-radius:5px;
-        position:relative;
+        position:relative;                 
         top:-10px;
     }
     .button_report{
@@ -361,7 +381,7 @@
         height:35px;
     }
 /*now utlilize the flex properties to gap the text fields*/
-    .formpack{
+   .formpack{
     display:flex;
     flex-direction:column;
     }
@@ -370,7 +390,7 @@
     }
 /*move both text fields down the subscription form */
 .form1 , .form2{
-    position:relative; 
+    position:relative;
     bottom:-50px
 }
 .card-content{
@@ -379,11 +399,7 @@
     font-size:large;
 }
 /*reposition the subscription form in its entirety*/
-.sign{
-    position:relative;
-    top:-435px;
-    float:right;
-}
+
 .wrap_bulletin{
     position:relative;
     bottom:-25px;   
@@ -396,6 +412,242 @@
     position:relative;
     left:-23px;
     top:-480px;
-    height:100vh; /*resize the image which is too large*/
-    width:auto;
+    height:90vh; /*resize the image which is too large*/
+    /*width:auto;*/
 }
+/* this here is to style the input field to white*/
+
+#job-application-form{
+    border-radius: 4px;
+    background-color: white;
+    padding-bottom: 15px;
+}
+#CTA_click{
+    padding-right:25px;
+    padding-left:25px;
+    background-color: #ffa200;
+    border-right:25px;
+}
+.entireall{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sign{
+    margin-right: 94px;
+    margin-top:48px;
+}
+/* IN THIS SECTION WE SHALL CREATE MEDIA QUERIES FOR MOBILE RESPONSIVENESS */
+/* create a media query for all the main headers that have been emboldened */
+/***************************************************************************/
+/***************************************************************************/
+
+@media (min-width:1137px) and (max-width:1200px) {
+    #combinations, .test{
+        font-size: 2.70rem;
+    }
+    .sign{
+        margin-right:75px;
+    }
+    /* reduce the dimension of the login form for smaller devices */
+    .sign_up_form{
+        height:450px;
+        width:430px;
+        padding:30px;
+    }
+    .form1, .form2{
+        top:15px;
+    }
+}
+@media (max-width:1136px) and (min-width:1110px){
+    /* reduce the font size from henceforth */
+    .subA, .subB, .subC, .narrate{
+        font-size: 18.5px;
+    }
+    /* reduce the login resolution of the login form to make for more space*/
+    .sign_up_form{
+        height:450px;
+        width:420px;
+        padding:30px
+    }
+    .form1, .form2{
+        top:5px;
+    }
+}
+@media (max-width:1109px) and (min-width:1100px){
+    .sign_up_form{
+        width:410px;
+    }
+
+    .subA, .subB, .subC, .narrate   {
+        font-size:18.5px;
+    }
+    .form1, .form2{
+        top:25px;
+    }
+}
+@media (max-width:1108px) and (min-width: 1059px){
+    .subA, .subB, .subC, .narrate{
+        font-size: 18px;
+    }
+    .sign_up_form{
+        width:406px;
+    }
+    .form1, .form2{
+        top:25px;
+    }
+    .entire, .main{
+        margin-left:-35px;
+    }
+}
+@media (max-width:1058px) and (min-width:1037px){
+    .entire, .main{
+        margin-left:-50px;
+    }
+    .sign_up_form{
+        width:406px;
+    }
+    .subA, .subB, .subC, .narrate{
+        font-size:18px;
+    }
+    .form1, .form2{
+        top:25px;
+    }
+    .sign{
+        padding-left:20px;
+    }
+}
+@media (max-width:1036px) and (min-width:989px){
+    .subA, .subB, .subC, .narrate{
+        font-size:17.7px;
+    }
+    .sign_up_form{
+        width:370px; 
+    }
+    .entire, .main{
+        margin-left:-50px;
+    }
+    .form1, .form2{
+        top:25px;
+    }
+    .sign{
+        padding-left:15px;
+    }
+}
+
+@media (max-width:988px) and (min-width:922px){
+    .subA, .subB, .subC, .narrate{
+        font-size:17.5px;
+    }
+    .report{
+        height:auto;
+    }
+    .sign_up_form{
+        width:420px;
+    }
+    .entireall{
+        flex-direction:row;
+        height:740px;
+        flex-wrap:wrap;
+    }
+    .entire, .main{
+        margin-left:-60px;
+    }  
+    .sign{
+        align-self:flex-end;
+        margin-left:58%;
+        margin-top:-20em;
+        padding-left:20px;
+    }
+    #combinations{
+        font-size:2.60em;
+    }
+    .hero_page_holder{
+        top:-50em;
+    }
+}
+/* media queries for the hero page */
+/*****************************************************************************************************/
+@media (max-width:1000px) and (min-width:922px){
+    .vp_message{
+        font-size:39px;
+        word-break: break-all;
+    }
+    .image_holder img{
+        height:87vh;
+        top:-25em;
+        left:-3.5em;
+        padding-right:25px;
+    }
+}
+@media (max-width:1347px) and (min-width:1143px){
+    .image_holder img{
+        top:-30em;
+    }
+}
+@media (max-width:1142px) and (min-width:1099px){
+    .image_holder img{
+        height:85vh;
+        top:-27em;
+        left:-3.8em;
+    }
+}
+@media (max-width:1143px) and (min-width:1126px){
+    .image_holder img{
+        left:-1em;
+        height:87vh;
+    }
+}
+@media (max-width:1097px)and (min-width:1001px){
+    .image_holder img{
+        top:-27em;
+        left:-3.8em;
+    }
+    .vp_message{
+        font-size:2.5em;
+    }
+}
+@media (max-width:1019px) and (min-width:1000px){
+    .image_holder img{
+        height:86vh;
+        top:-24em;
+    }
+}
+@media (max-width:999px) {
+    .vp_flex{
+        display:flex;
+        flex-direction:column;
+        height:850px;
+        align-content:flex-start;
+        align-items: center;
+    }
+    .YURU{
+        height:900px;
+    }
+    .vp_message{
+        text-align: center;
+        font-size:2.5em;
+    }
+    .buttonss{
+        margin-bottom:19em;
+    }
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
