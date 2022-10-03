@@ -1,1 +1,1 @@
-web: gunicorn Alphanumbers.wsgi
+web: gunicorn NUMERO_UNO.wsgi
