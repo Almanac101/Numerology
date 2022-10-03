@@ -1,1 +1,1 @@
-web: bundle exec NUMERO_UNO server -p $PORT
+web: gunicorn Alphanumbers.wsgi:application --log-file -
