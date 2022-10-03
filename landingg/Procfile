@@ -1,1 +1,1 @@
-web: bundle exec Alphanumbers server -p $PORT
+web: bundle exec NUMERO_UNO server -p $PORT
