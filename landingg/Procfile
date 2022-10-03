@@ -1,1 +1,1 @@
-web: gunicorn Alphanumbers.wsgi
+web: bundle exec Alphanumbers server -p $PORT
